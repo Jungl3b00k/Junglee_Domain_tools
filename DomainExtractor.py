@@ -1,5 +1,12 @@
-import sys, getopt 
-import re 
+#!/usr/bin/python
+
+# import module
+import sys, getopt
+import re
+import time
+import os
+
+#Define Argument Check
 def arg_check(argv):
    global inputfile
    global outputfile
@@ -20,7 +27,15 @@ def arg_check(argv):
          outputfile = arg
    print 'Your Fucking Input file is "', inputfile
    print 'your Fucking Output file is "', outputfile
-   
+
+#Define duplicate  removal function
+def removeDups(outputfile,inputfile):
+     lines=open(outputfile, 'r').readlines()
+     lines_set = set(lines)
+     out=open(inputfile, 'w')
+     for line in lines_set:
+                out.write(line)
+#main Function
 if __name__ == "__main__":
   arg_check(sys.argv[1:])
   re_pattern = re.compile(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}')
@@ -29,4 +44,10 @@ if __name__ == "__main__":
          for line in fh_in:
             match_list = re_pattern.findall(line)
             if match_list:
-                fh_out.write('http:// '+match_list[0]+"\r\n")
+                fh_out.write(match_list[0]+"\r\n")
+     fh_out.close()
+  fh_in.close()
+  print ("Getting ready  for Final output File")
+  time.sleep(1)
+  removeDups(outputfile,inputfile)
+  os.remove(outputfile)
