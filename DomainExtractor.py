@@ -41,10 +41,7 @@ if __name__ == "__main__":
         # Subdomain Extractor  #  By JungleB00K
         #######################################################################
         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        usages Example:
-                Please Enter Here All Word for combination :  Avf$5.%
-                please enter here lengh of words : 4
-                please enetr here name of Wordlist :wordlist.txt
+        With LOve JungleB00k :)With LOve JungleB00k :)With LOve JungleB00k :)
         **********************************************************************
         **********************************************************************
         '''
