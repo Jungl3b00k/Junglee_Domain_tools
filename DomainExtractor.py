@@ -38,7 +38,7 @@ def removeDups(outputfile,inputfile):
 if __name__ == "__main__":
   info = '''
         #######################################################################
-        # Python WordList Generator  #  By JungleB00K
+        # Subdomain Extractor  #  By JungleB00K
         #######################################################################
         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         usages Example:
