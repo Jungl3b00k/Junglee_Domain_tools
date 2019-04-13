@@ -36,6 +36,19 @@ def removeDups(outputfile,inputfile):
                 out.write(line)
 #main Function
 if __name__ == "__main__":
+  info = '''
+        #######################################################################
+        # Python WordList Generator  #  By JungleB00K
+        #######################################################################
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        usages Example:
+                Please Enter Here All Word for combination :  Avf$5.%
+                please enter here lengh of words : 4
+                please enetr here name of Wordlist :wordlist.txt
+        **********************************************************************
+        **********************************************************************
+        '''
+  print info
   arg_check(sys.argv[1:])
   re_pattern = re.compile(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}')
   with open(inputfile, "r") as fh_in:
