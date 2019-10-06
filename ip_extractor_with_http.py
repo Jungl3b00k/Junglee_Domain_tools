@@ -22,6 +22,9 @@ def arg_check(argv):
    print 'your Fucking Output file is "', outputfile
    
 if __name__ == "__main__":
+  '''Printing .....IP's from Lists or TEXT
+  THANKS F0r Wa!t!ing'''
+  print(__main__.__doc__)
   arg_check(sys.argv[1:])
   re_pattern = re.compile(r'(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3})')
   with open(inputfile, "r") as fh_in:
