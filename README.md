@@ -9,3 +9,4 @@ DomainExtractor.py -i (inputfile) -o (outputfile)
 
 These work in same way as Domainextractor.py but here Ip address extracted removing duplicates.
 ip_extractor_with_http.py -i <inputfile> -o <outputfile>
+g
